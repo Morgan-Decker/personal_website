@@ -44,17 +44,39 @@
 
   <section class="intro">
     <h1 class="section__title section__title--intro">
-      Neuro AI consult <strong>Deparment of Neuroscience, Glasgow University</strong>
+      Neuro AI consult <strong>Deparment of Neuroscience</strong>
     </h1>
     <p class="section__subtitle section__subtitle--intro">Analysing brain waves to interpret emotion</p>
     <img src="img\neuro.jpg" alt="a picture of Morgan Decker" class="intro__img">
   </section>
 
   <div class="portfolio-item-individual">
-    <p></p>
+    <p>
+      Over the summer of 2021, I was involved with a PHD project which involved analysing participant brain waves to predict emotional responses.
+      A participant was given a series of positive and negative stimuli, and we recorded different areas of their brain.
+      The department wanted to use this data to create a machine learning algorithm to predict if a person had a positive or negative reaction.
+    </p>
+
     <img src="img/eeg.jpg">
-    <p>filler</p>
-    <p>filler</p>
+
+    <p>
+      One part of my role was using my technical background to modernise their programming practices.
+      This involved setting up the department on GitHub and introducing them to simple programming constructs to make development easier.
+      For example, I noticed that large sections of their code were repeated.
+      This meant when they made a change to a section of code, they had to check if that change would need to be made in other files too.
+      If this code was reused elsewhere, they had to copy and paste the change into every file where it was used.
+      I introduced the concept of refactoring, where you could create helper functions so changes would only need to take place once.
+      This was received positively as it meant having new ideas was not a burden to implement.
+    </p>
+
+    <p>
+      My other role was to convert a section of the codebase from MATLAB to python.
+      I noticed that when the department tried to run their data through the MATLAB program, they would have to wait for minutes to see the result.
+      While converting to python, I introduced the department to vectorised programming with NumPy.
+      Using vectorised programming means that specific instructions at the CPU level are allowed to be used.
+      These instructions allow data analysis to occur in parallel, greatly speeding up the analysis time.
+      Researchers in the department noticed a significant performance boost and were happy with the new processing technique.
+    </p>
   </div>
 
     <!-- Footer -->

@@ -44,17 +44,39 @@
 
   <section class="intro">
     <h1 class="section__title section__title--intro">
-      Lloyds Banking Group Hackathon <strong>Cancara</strong>
+      Lloyds Hackathon <strong>Cancara</strong>
     </h1>
-    <p class="section__subtitle section__subtitle--intro">Bridging the gap between the elderly and digital banking</p>
-    <img src="img\ar headset.jpg" alt="a picture of Morgan Decker" class="intro__img">
+    <p class="section__subtitle section__subtitle--intro">Bridging the gap</p>
+    <img src="img\lloyds.jpg" alt="a picture of Morgan Decker" class="intro__img">
   </section>
 
   <div class="portfolio-item-individual">
-    <p></p>
-    <img src="img/headshot.jpg">
-    <p>filler</p>
-    <p>filler</p>
+    <p>
+      My idea was to create a virtual assistant which can understand conversational English to process a financial request.
+      The user should be able to press a physical button, have some sort of verification to ensure the person using the device has access to the account, and then start speaking to the device as if it was a person in a Lloyd’s bank branch.
+      The device should be able to respond to the user through speech.
+    </p>
+
+    <p>
+      Firstly, when run for the demonstration a window will appear.
+      This window contains a basic design of the device, consisting of a circular button with the word “Cancara” written across it (created in pygame).
+      This window acts as the device would in real life.
+      When the button is clicked, a web camera live stream is created.
+      This live stream uses OpenCV to detect and recognise faces.
+      This facial recognition is used for security.
+      Once the user’s face has been recognised and linked to their account, Cancara will start listening to the user through their default microphone.
+      Once the user has finished speaking, Cancara will process the request and either complete the task or ask necessary follow-up questions.
+      Currently, Cancara can add payment contacts and make fictional money transfers.
+      Since this was a proof-of-concept project, it did not need to provide financial advice.
+      I would like to improve on this project in the future to provide such information.
+    </p>
+
+    <p>
+      Not only does this replace the need for a branch, but using this system is much quicker than using an app.
+      Instead of clicking through multiple screens and buttons, you can simply say “transfer this person this amount of money” and the transfer is made.
+      This would be especially useful if connected with other popular virtual assistants, such as Siri.
+    </p>
+
   </div>
 
     <!-- Footer -->

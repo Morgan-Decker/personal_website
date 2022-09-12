@@ -46,15 +46,43 @@
     <h1 class="section__title section__title--intro">
       <strong>Classroom Assistant</strong>
     </h1>
-    <p class="section__subtitle section__subtitle--intro">Automating menial tasks for teachers</p>
-    <img src="img\ar headset.jpg" alt="a picture of Morgan Decker" class="intro__img">
+    <p class="section__subtitle section__subtitle--intro">Automating the classroom</p>
+    <img src="img\classroom.jpg" alt="a picture of Morgan Decker" class="intro__img">
   </section>
 
   <div class="portfolio-item-individual">
-    <p></p>
-    <img src="img/headshot.jpg">
-    <p>filler</p>
-    <p>filler</p>
+    <p>
+      The idea behind this project is to provide teachers with extra support and to reduce the amount of time spent in class by automating repetitive tasks.
+      Examples of tasks which can be automated are attendance tracking, homework checking, and automatically detecting students as late.
+    </p>
+
+    <p>
+      Firstly, the program is launched when someone is detected walking into the classroom.
+      It does this through two infrared motion sensors connected to a raspberry pi.
+      If the sensor closest to the door detects motion followed by the one further away, we can infer that someone has walked into the room.
+    </p>
+
+    <p>
+      From here, the camera launches with OpenCV to scan a QR code.
+      When the QR code is scanned, it looks through an SQLite database to see if it can match the QR code to a person in the database.
+      From here, different screens are bought up depending on if the user’s QR code is a student, teacher, or administrator.
+    </p>
+
+    <p>
+      If the QR code is a student and a class is about to start, it will automatically register their attendance and ask if they have done their homework.
+      If they have not, they will automatically be assigned the necessary discipline set by the teacher (in the case of the alevel project demonstration, assigned detention on the database).
+      Teachers can create homework and set punishments for being late.
+      Administrators have full database control.
+    </p>
+
+    <p>
+      This project generated interest within my school.
+      Some departments requested the use of the assistant as it would help teachers run their lessons.
+      Furthermore, the computing department received more funding to buy raspberry pis.
+      This inspired students to use peripherals in their projects, and to create projects which solve real problems.
+      The classroom assistant is now an A* exemplar project.
+      I can send a dissertation paper upon request that details the development process, research, design, and obstacles faced.
+    </p>
   </div>
 
     <!-- Footer -->
